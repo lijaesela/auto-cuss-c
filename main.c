@@ -1,8 +1,11 @@
-#include <sysexits.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include "config.h"
+
+#define EX_USAGE 1
+#define EX_NOINPUT 1
+#define EX_DATAERR 1
 
 #define ERR(...) fprintf(stderr, "ERROR: "__VA_ARGS__)
 // max length of i32 as printf format
